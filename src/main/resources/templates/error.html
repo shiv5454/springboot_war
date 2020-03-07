@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot</title>
+
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+
+<body>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1 style="text-align: center;">Error</h1>
+        <h2 style="text-align: center; color: red;">
+            <span th:text="'OOPS !!! '+${message}"></span>
+        </h2>
+        <br>
+        <h2><a href="/">HOME</a></h2><br>
+        <h2><a href="/contact">Contact</a></h2>
+    </div>
+
+</main>
+
+</body>
+</html>
